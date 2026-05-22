@@ -1,4 +1,4 @@
-# 🚗 AutoParts Pro - E-Commerce Platform
+# 🚗 Gull & Sons Auto Parts - E-Commerce Platform
 
 A full-stack web application for buying and selling automotive parts with real-time chat, admin dashboard, and advanced e-commerce features.
 
@@ -128,8 +128,8 @@ cd backend
 # Install dependencies
 npm install
 
-# Create .env file
-cp .env.example .env  # Configure your environment variables
+# Create .env file locally and keep it private
+# The repository ignores .env files by default
 
 # Start the server
 npm run dev    # Development with nodemon
@@ -242,6 +242,15 @@ MAX_FILE_SIZE=5242880
 ```
 VITE_API_URL=http://localhost:5000
 ```
+
+---
+
+## 📞 Contact
+
+- WhatsApp support: `+923263133136`
+- Instagram: https://www.instagram.com/gullautoparts.pk?igsh=ODA5c25vb2V4ZXVx
+- Facebook: https://www.facebook.com/share/18fsjsHVuk/
+- YouTube: https://youtube.com/@gullandsonsautoparts?si=47XXV_xx466NHFn7
 
 ---
 
