@@ -245,6 +245,43 @@ VITE_API_URL=http://localhost:5000
 
 ---
 
+## 🌐 Vercel Deployment
+
+This repository contains both apps in one monorepo:
+- `frontend/` for the React app
+- `backend/` for the API
+
+### Deploy Frontend on Vercel
+1. Import this GitHub repo into Vercel.
+2. Set `Root Directory` to `frontend`.
+3. Set these values:
+   - `Build Command`: `npm run build`
+   - `Output Directory`: `dist`
+   - `Install Command`: `npm install`
+4. Add env var:
+   - `VITE_API_URL=https://your-backend-domain.vercel.app`
+5. Redeploy.
+
+### Deploy Backend on Vercel
+1. Create a second Vercel project from the same GitHub repo.
+2. Set `Root Directory` to `backend`.
+3. Set these values:
+   - `Build Command`: `npm run build`
+   - `Output Directory`: leave default for the Node function setup
+   - `Install Command`: `npm install`
+4. Add env vars:
+   - `MONGO_URI`
+   - `JWT_SECRET`
+   - `CLIENT_URL=https://your-frontend-domain.vercel.app`
+5. Redeploy.
+
+### Important
+- Frontend and backend should be two separate Vercel projects.
+- After changing env vars, use `Clear cache and redeploy`.
+- If the backend returns `500`, check Vercel function logs first.
+
+---
+
 ## 📞 Contact
 
 - WhatsApp support: `+923263133136`
